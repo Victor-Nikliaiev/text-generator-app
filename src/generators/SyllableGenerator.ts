@@ -1,6 +1,4 @@
 class SyllableGenerator {
-  constructor() {}
-
   private _generate_abc(): string[] {
     const alfa: number[] = Array.from(Array(26)).map((e, i) => i + 97);
     const alfabet: string[] = alfa.map((x) => String.fromCharCode(x));

@@ -1,10 +1,6 @@
 import WordGen from "./WordGenerator";
 
 class PhraseGenerator extends WordGen {
-  constructor() {
-    super();
-  }
-
   private _generatePhrase(wordsNumber: number): string {
     let phrases: string[] = [];
     phrases = [...Array(wordsNumber).keys()].map(() => this.randomWord);

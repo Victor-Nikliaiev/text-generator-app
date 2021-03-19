@@ -1,5 +1,6 @@
 import PhraseGen from "./generators/PhraseGenerator";
 import React, { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 function App() {
   const phraseGen = new PhraseGen();
   const [wordsNumber, setWordsNumber] = useState<number>(1);
@@ -10,6 +11,7 @@ function App() {
     const wholePhrase = phraseGen.getPhrase(wordsNumber);
     setPhrase(wholePhrase);
   };
+
   return (
     <>
       <div>
@@ -33,7 +35,22 @@ function App() {
           <button type="submit">generate</button>
         </form>
       </div>
-      <p>{phrase}</p>
+
+      {!!phrase && (
+        <div>
+          <CopyToClipboard text={phrase}>
+            <button>Copy to clipboard</button>
+          </CopyToClipboard>
+          <textarea
+            id="phrase"
+            name="phrase"
+            rows={8}
+            cols={50}
+            value={phrase}
+            disabled
+          ></textarea>
+        </div>
+      )}
     </>
   );
 }
