@@ -1,11 +1,8 @@
 import WordGen from "./WordGenerator";
 
 class PhraseGenerator extends WordGen {
-  constructor(private _wordsNumber: number) {
+  constructor() {
     super();
-    if (this._wordsNumber <= 0) {
-      this._wordsNumber = 1;
-    }
   }
 
   private _generatePhrase(wordsNumber: number): string {
@@ -14,8 +11,11 @@ class PhraseGenerator extends WordGen {
     return phrases.join(" ");
   }
 
-  get phrase(): string {
-    const phrase = this._generatePhrase(this._wordsNumber);
+  getPhrase(wordsNumber: number): string {
+    if (wordsNumber <= 0) {
+      wordsNumber = 1;
+    }
+    const phrase = this._generatePhrase(wordsNumber);
     return phrase;
   }
 }
