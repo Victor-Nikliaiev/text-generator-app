@@ -3,7 +3,7 @@ import WordGen from "./WordGenerator";
 class PhraseGenerator extends WordGen {
   private _generatePhrase(wordsNumber: number): string {
     let phrases: string[] = [];
-    phrases = [...Array(wordsNumber).keys()].map(() => this.randomWord);
+    phrases = Array.from({ length: wordsNumber }, () => this.randomWord);
     return phrases.join(" ");
   }
 

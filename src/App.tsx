@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Phrase Generator</h1>
+        <h1>Dummy text generator</h1>
         <form onSubmit={handleSubmit}>
           <label htmlFor="wordLength">How many words to generate?: </label>
           <input
