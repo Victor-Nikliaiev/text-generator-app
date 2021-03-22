@@ -21,7 +21,7 @@ What technologies were used to build this app:
 
 > here you can see its preview
 
-![Screen](https://picsum.photos/300/200)
+![Screen](https://github.com/Victor-Nikliaiev/text-generator-app/blob/main/src/img/screen.png?raw=true)
 
 ## Live version
 
