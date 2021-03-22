@@ -13,16 +13,18 @@ class WordGenerator extends SylsGen {
     return wordLength;
   }
 
-  private _generateRandIndexes(
+  protected _generateRandIndexes(
     wordLength: number,
     sylbArrLength: number
   ): number[] {
     let indexes: number[] = [];
-    // doing random index with max exclusive
-    // (To get correct index: lastIndex= length-1)
+    // Getting random index with max number exclusive
     for (let i = 0; i < wordLength; i++) {
       let randIndex = Math.floor(Math.random() * sylbArrLength);
-      if (randIndex === indexes[indexes.length - 1]) {
+      if (
+        randIndex === indexes[indexes.length - 1] &&
+        randIndex !== indexes.length - 1
+      ) {
         randIndex += 1;
       }
       indexes = [...indexes, randIndex];

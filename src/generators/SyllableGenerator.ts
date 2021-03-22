@@ -14,6 +14,7 @@ class SyllableGenerator {
         }
       });
     });
+    syls = [...syls, ...abc];
     return syls;
   }
 
