@@ -25,4 +25,4 @@ What technologies were used to build this app:
 
 ## Live version
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can take a look at live version [here](https://text-generator-app.vercel.app/).
