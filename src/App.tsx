@@ -1,6 +1,6 @@
 import PhraseGen from "./generators/PhraseGenerator";
 import EngPhraseGen from "./generators/EnglishPhraseGenerator";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 function App() {
   const phraseGen = new PhraseGen();
