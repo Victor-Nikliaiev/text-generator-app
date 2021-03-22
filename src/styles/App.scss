@@ -34,7 +34,6 @@ body {
 
 .container {
   max-width: 900px;
-  // text-align: center;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -59,10 +58,15 @@ section {
   min-height: 50%;
 }
 
+/*
+===========
+Typography
+===========
+*/
+
 h1 {
   font-family: $font2;
   font-size: 4rem;
-  // margin-bottom: 0.5em;
 }
 
 @media screen and (max-width: 400px) {
@@ -72,7 +76,6 @@ h1 {
 }
 form {
   display: flex;
-  // border: 2px solid magenta;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: center;
@@ -114,13 +117,6 @@ form {
     color: rgb(36, 35, 35);
   }
 }
-// @media only screen and (max-width: 400px) {
-//   .container {
-//     min-width: auto;
-//     max-width: auto;
-//     width: 80vw;
-//   }
-// }
 
 article {
   font-size: 1rem;

@@ -57,6 +57,11 @@ section {
   min-height: 50%;
 }
 
+/*
+===========
+Typography
+===========
+*/
 h1 {
   font-family: "Syne Mono", monospace;
   font-size: 4rem;
